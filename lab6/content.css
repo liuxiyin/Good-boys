@@ -1,0 +1,15 @@
+td a:link.n{font-size: 14px;color: #b9f605;font-weight: 900;text-decoration: none;font-size: 16px;}
+td a:visited.n{font-size: 14px;color: #b9f605;font-weight: 900;text-decoration: none;font-size: 16px;}
+td a:link.j{color: white;font-weight: 900;font-size: 16px;}
+td a:hover.j{color: #b9f605;font-weight: 900;font-size: 16px;}
+td a:visited.j{color: white;font-weight: 900;font-size: 16px;}
+td a:link.m{color:#fdb306;text-decoration: none;font-weight: 900;font-size: 16px;}
+td a:visited.m{color:#fdb306;text-decoration: none;font-weight: 900;font-size: 16px;}
+td{color:gray; font-family: Arial;font-size: 12px;}
+a{color:#727272;line-height: 2em;}
+a:link{text-decoration: none;}
+a:hover{text-decoration: underline;}
+td h3{font-family: '微软雅黑';font-size: 20px;color: #686868;}
+td h5{font-family: Arial;font-size: 12px;color: #a9a8a8;}
+p{font-size: 14px;text-indent: 2em;}
+p.w{color: #22a3d3;}
