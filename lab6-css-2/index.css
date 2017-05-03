@@ -1,0 +1,10 @@
+.list a{
+	font-family : '微软雅黑' ;
+	font-size:16px;
+	color : #65a7d0;
+	font-weight : bold;
+	
+}
+ul.square{
+	list-style-type:square;
+}

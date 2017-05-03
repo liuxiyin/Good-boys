@@ -1,0 +1,13 @@
+.a a{
+	font-size : 14px;
+}
+.a a:hover{
+	color : #b9f605;
+	text-decoration : none;
+}
+ul.b{
+	list-style-type:square;
+}
+.a ul{
+	list-style-image:url(images/title.png);
+}

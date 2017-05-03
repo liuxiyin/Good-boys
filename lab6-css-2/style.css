@@ -1,0 +1,27 @@
+*{
+	font-size : 12px ;
+	line-height : 2em;
+	
+}
+a:link{
+	color : #727272;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.head{
+	font-size: 14px;
+	color : #b9f605;
+	font-weight : bold;
+}
+.head a{
+	color : white;
+}
+.head a:hover {
+	color : #b9f605;
+	text-decoration : underline;
+}
+ul{
+	list-style-type:none;
+}

@@ -1,0 +1,21 @@
+.title{
+	font-family : 'Î¢ÈíÑÅºÚ';
+	font-size : 20px;
+	color : #686868;
+	font-weight : normal;
+}
+.title_2{
+	font-family : Arial;
+	font-size : 12px;
+	color:#a9a8a8;
+	font-weight : bold;
+	
+}
+.u{
+	color : #22a3d3;
+	text-decoration : none;
+	
+}
+*{
+	text-indent :2em;
+}
