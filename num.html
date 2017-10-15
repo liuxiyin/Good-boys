@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简单计算器</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+	var numresult;
+	var str;
+	function onclicknum(nums) { 
+		str = document.getElementById("nummessege"); 
+		str.value = str.value + nums; 
+	} 
+	function onclickclear() { 
+		str = document.getElementById("nummessege"); 
+		str.value =""; 
+	}
+	function onclickresult(nums) { 
+		str = document.getElementById("nummessege"); 
+		numresult = eval(str.value); 
+		str.value = numresult; 
+	}
+	</script>
+</head>
+<body>
+<script type="text/javascript" src="a.css"></script>
+<table border="1" cellpadding="10px">
+	<tr>
+		<td colspan="3"><input type="text" id="nummessege"></td>
+		<td><input type="button" value="c" id="clear" onclick="onclickclear()"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="1" id="1" onclick="onclicknum(1)"></td>
+		<td><input type="button" value="2" id="2" onclick="onclicknum(2)"></td>
+		<td><input type="button" value="3" id="3" onclick="onclicknum(3)"></td>
+		<td><input type="button" value="+" id="add" onclick="onclicknum('+')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="4" id="4" onclick="onclicknum(4)"></td>
+		<td><input type="button" value="5" id="5" onclick="onclicknum(5)"></td>
+		<td><input type="button" value="6" id="6" onclick="onclicknum(6)"></td>
+		<td><input type="button" value="-" id="sub" onclick="onclicknum('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="7" id="7" onclick="onclicknum(7)"></td>
+		<td><input type="button" value="8" id="8" onclick="onclicknum(8)"></td>
+		<td><input type="button" value="9" id="9" onclick="onclicknum(9)"></td>
+		<td><input type="button" value="*" id="mul" onclick="onclicknum('*')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="0" id="0" onclick="onclicknum(0)"></td>
+		<td><input type="button" value="." id="point" onclick="onclicknum('.')"></td>
+		<td><input type="button" value="=" id="result" onclick="onclickresult()"></td>
+		<td><input type="button" value="/" id="division" onclick="onclicknum('/')"></td>
+	</tr>
+</table>
+</body>
+</html>
