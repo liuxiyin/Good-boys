@@ -1,0 +1,30 @@
+#wrap{
+	width: 520px;
+	height: 400px;
+}
+p{
+	text-indent: 2em;
+	width: 500px;
+	height: 30px;
+	margin: 5px;
+	background-image: url(images/bg.jpg);
+}
+#comment{
+
+	width: 520px;
+	margin: 5px;
+	height: 250px
+}
+#pic img{
+	display: block;
+	float: left;
+	margin: 8px;
+	margin-left: 20px;
+}
+button{
+	display: block;
+	float: right;
+}
+.pic{
+
+}
