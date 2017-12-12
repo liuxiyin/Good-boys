@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> 仿QQ空间相册 </title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        #main{
+        width:1000px;
+        margin:auto;
+        }
+        #smallpic{
+        height:120px; 
+        }
+        img{
+        float:left; 
+        margin-right:10px; 
+        margin-bottom:10px;
+        }
+        #smallpic img:hover{
+            cursor:pointer; /*设定鼠标的形状为小手*/
+        }
+        .pb{
+         border:3px solid #14c3fd;
+        } 
+    </style>
+   
+</head>
+
+<body>
+    <div id="main">
+        <div id="smallpic">
+            <img src="images/s2.jpg" width="180" height="100"  onclick="showBig(this)" / >
+            <img src="images/s3.jpg" width="180" height="100" onclick="showBig(this)" />
+            <img src="images/s4.jpg" width="180" height="100"  onclick="showBig(this)"/>
+            <img src="images/s5.jpg" width="180" height="100"  onclick="showBig(this)"/>
+            <img src="images/s6.jpg" width="180" height="100" onclick="showBig(this)" />
+        </div>
+        <div >
+            <img id="bigpic" src="images/s1.jpg" width="940px" alt="s1.jpg"/>
+        </div>
+    </div>
+</body>
+<script src="jquery-3.2.1.slim.min.js"></script>
+ <script type="text/javascript">
+        var smallpic=document.getElementById('smallpic');
+        var bigpic=document.getElementById('bigpic');
+        function showBig(which){
+            for(var i=0;i<10;i++)
+            {
+                $(smallpic.childNodes[i]).css("border","none");
+            }
+            $(which).css("border","2px solid yellow");
+            var source=which.src;
+            bigpic.src=source;
+        }
+    </script>
+</html>

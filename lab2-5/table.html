@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+	</style>
+	
+</head>
+<body>
+	<table width="1000px" border="1" >
+		<tr height="30px">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+
+
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" onclick="addrow()" />
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" onclick="deleterow()" />
+</body>
+<script type="text/javascript" src="jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript">
+   	var t = document.getElementsByTagName('table');
+   	function addrow(){
+   		$(t).append("<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>")
+    }
+    function deleterow(){
+    	$(t).find("tr:last").remove();
+    }
+    $(function(){    	
+    	$("table").delegate("tr","mouseover",function(){
+    		$(this).css("background-color","#FC3");
+    	})
+    	$("table").delegate("tr","mouseout",function(){
+    		$(this).css("background-color","#FFF");
+    	})
+    })
+</script>
+</html>
