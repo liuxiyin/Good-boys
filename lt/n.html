@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8" />
+
+	<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;					
+				font-family: arial, 宋体, serif;
+				font-size: 12px;
+			}	
+			#top{
+				float: left;
+			}				
+			#nav {
+				margin-top: 20px;
+				margin-left: 450px;
+				line-height: 24px; 
+				list-style-type: none; 
+				background: #666;
+				width: 100%;
+			}					
+			#nav a:link {
+				display: block;
+				width: 80px;
+				text-align: center;
+				color: pink; 
+				text-decoration: none;
+			}					
+			#nav a:hover {
+				color: #FFF;
+				text-decoration: underline;
+				font-weight: bold;
+				background:#999;
+			}
+			#nav li {
+				float: left; 
+				width: 80px; 
+				background: red;
+			}					
+			#nav li ul {
+				line-height: 27px;
+				list-style-type: none;
+				text-align: left;						
+				width: 180px; 						
+				display: none;
+			}
+			#nav li ul li{
+				float: left; 
+				width: 100px;						
+			}
+			#nav li ul a:link {
+				display: block; 
+				width: 75px;
+				text-align: left;
+				padding-left: 24px;
+				color: #666;
+			}							
+			#nav li ul a:hover {
+				color: #F3F3F3;
+				text-decoration: underline;
+				font-weight: normal;
+				background: purple;
+			}
+			#nav li.sfhover ul {						
+				display: block;
+				position: absolute;
+			}
+	        #main{
+	        float: left;
+    	    width:800px;
+    	    margin-top: 20px;
+    	    margin-left: 230px;
+    	    }
+    	    #smallpic{
+    	    height:120px; 
+    	    }
+    	    img{
+    	    float:left; 
+    	    margin-right:10px; 
+    	    margin-bottom:10px;
+    	    }
+    	    #smallpic img:hover{
+            cursor:pointer; 
+        	}
+        	.pb{
+        	 border:3px solid #14c3fd;
+        	} 		
+        	#bigpic{
+        		width:340px; 
+        		height:340px; 
+        		margin-left: 200px;
+        	}
+        	#bottom{
+        		float: left;
+        		width: 1200px;
+        	}
+        	#btn{
+        		background-color: brown; 
+        		font-size: 30px;
+        		text-align: center;
+        	}
+        	#btn1{
+        		background-color: brown;
+        		font-size: 25px;
+        	}
+        	.d{
+        		background-color: green;
+        		font-size: 14px;
+        		width: 253px;
+        	}
+	</style>
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript">
+	function subMenu() {
+			var liNodes = document.getElementsByTagName("li");
+						
+			for (var i=0; i<liNodes.length; ++i) {						
+			liNodes[i].onmouseover = function() {
+					this.className = "sfhover";
+				} 						
+			liNodes[i].onmouseout = function() {
+					this.className = "";
+				} 				
+			}		
+		} 
+		window.onload = subMenu;
+		function changeImg2() {
+			var div = document.getElementById('bigpic');
+			//修改div节点的innerHTML属性
+			div.innerHTML = "<img src='images/c2.jpg' width='300px' height='300px' />";
+		}
+		function changeImg3() {
+			var div = document.getElementById('bigpic');
+			//修改div节点的innerHTML属性
+			div.innerHTML = "<img src='images/c3.jpg' width='300px' height='300px' />";
+		}
+		function changeImg4() {
+			var div = document.getElementById('bigpic');
+			//修改div节点的innerHTML属性
+			div.innerHTML = "<img src='images/c4.jpg' width='300px' height='300px' />";
+		}
+		function changeImg5() {
+			var div = document.getElementById('bigpic');
+			//修改div节点的innerHTML属性
+			div.innerHTML = "<img src='images/c5.jpg' width='300px' height='300px' />";
+		}
+		function st(){
+			var div = document.getElementById("btn1");
+			btn1.innerHTML="";
+		}
+		function stn(){
+			var div = document.getElementById("btn1");
+			btn1.innerHTML="《西游记》是一部神话小说，这是大众认同的，这个观点没有错。其实也是这样，整部《西游记》，都写的是神话故事。但是我要说，《西游记》不仅仅是神话小说，如果我们深入研究下去，就会发现《西游记》所蕴含的意义，就不只是塑造几个人物，用一些神奇的故事情节把他们联系起来，给人们茶余饭后谈古论今时提供一点聊天的话题那么简单了。在那些离奇古怪的故事情节里面，融合了中国古代文化三大主流佛、道、儒的思想精粹。广博的知识涉及到政治、经济、军事、文化，禅、易、医、巫等，理论都非常精深。";
+		}
+	</script>
+</head>
+<body>
+	<div id="top">
+	<ul id="nav">
+		<li><a href="#">西游记</a>
+			<ul>
+				<li><a href="#">故事剧情</a></li>
+				<li><a href="#">人物介绍</a></li>
+				<li><a href="#">剧组照片</a></li>
+			</ul>
+		</li>
+		<li><a href="#">孙悟空</a>
+			<ul>
+				<li><a href="#">人物介绍</a></li>
+				<li><a href="#">照片</a></li>
+			</ul>
+		</li>
+		<li><a href="#">唐三藏</a>
+			<ul>
+				<li><a href="#">人物介绍</a></li>
+				<li><a href="#">照片</a></li>
+			</ul>
+		</li>
+		<li><a href="#">猪八戒</a>
+			<ul>
+				<li><a href="#">人物介绍</a></li>
+				<li><a href="#">照片</a></li>
+			</ul>
+		</li>
+		<li><a href="#">沙和尚</a>
+			<ul>
+				<li><a href="#">人物介绍</a></li>
+				<li><a href="#">照片</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+	<div id="main">
+        <div id="smallpic">
+            <img src="images/c2.jpg" width="180" height="100"  onclick="changeImg2()" / >
+            <img src="images/c3.jpg" width="180" height="100" onclick="changeImg3()" />
+            <img src="images/c4.jpg" width="180" height="100"  onclick="changeImg4()"/>
+            <img src="images/c5.jpg" width="180" height="100"  onclick="changeImg5()"/>
+        </div>
+        <div  id="bigpic">
+            <img src="images/c2.jpg" width="300px" height="300px" alt="c2.jpg"/>
+        </div>
+    </div>
+    <div id="bottom">
+    	<button class="d" onclick="st()">点击这里内容缩去，点击最下方再变回。</button>
+    	<button id="btn1" onclick="st()">《西游记》是一部神话小说，这是大众认同的，这个观点没有错。其实也是这样，整部《西游记》，都写的是神话故事。但是我要说，《西游记》不仅仅是神话小说，如果我们深入研究下去，就会发现《西游记》所蕴含的意义，就不只是塑造几个人物，用一些神奇的故事情节把他们联系起来，给人们茶余饭后谈古论今时提供一点聊天的话题那么简单了。在那些离奇古怪的故事情节里面，融合了中国古代文化三大主流佛、道、儒的思想精粹。广博的知识涉及到政治、经济、军事、文化，禅、易、医、巫等，理论都非常精深。</button>
+    	<div id="btn" onclick="stn()"> 《西游记》 </div>
+    </div>
+</body>
+</html>
