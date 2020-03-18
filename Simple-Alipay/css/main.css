@@ -1,0 +1,43 @@
+
+.mui-bar-nav{
+	background-color: #108ee9;
+}
+.mui-bar .mui-title {
+	position: relative;
+	left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    text-overflow: ellipsis;
+	color: white;
+}
+.spans{
+	width: 30px;
+	text-align: center;
+	line-height: 44px;
+	float: right;
+	color: white;
+}
+.mui-row {
+	text-align: center!important;
+	justify-content: center!important;
+	align-items: center!important;
+	width: 100%;
+	margin: 0;
+	background-color: white;
+}
+.mui-row{
+	height: 20%;
+	width:100%;
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+.img{
+	width:50%;
+	height: 50%;
+}
+.mui-col-xs-4{
+	text-align: center;
+	justify-content: center!important;
+	align-items: center!important;
+}

@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "100692",
+      "name": "钱包朋友",
+      "font_class": "qianbaopengyou",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "101225",
+      "name": "购物",
+      "font_class": "gouwu",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "101246",
+      "name": "社交",
+      "font_class": "shejiao",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "101280",
+      "name": "长辈",
+      "font_class": "changbei",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "101525",
+      "name": "财富A",
+      "font_class": "caifua",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "5424552",
+      "name": "alipay",
+      "font_class": "alipay",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    }
+  ]
+}
