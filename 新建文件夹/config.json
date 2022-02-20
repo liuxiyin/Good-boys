@@ -1,0 +1,45 @@
+[
+    {
+    "cname": "店铺账号",
+    "label": "acc",
+    "type": "0",
+    "value": "",
+    "description": "如为空，需使用拼多多商家app扫码方式登陆"
+    },
+    {
+    "cname": "店铺密码",
+    "label": "pwd",
+    "type": "0",
+    "value": "",
+    "description": "如为空，需使用拼多多商家app扫码方式登陆"
+    },
+    {
+    "cname": "商品创建起始时间 ",
+    "label": "start_time",
+    "type": "0",
+    "value": "",
+    "description": "如为空，默认时间为当日（日期格式如2022-1-1或2022-1-1 00:00）"
+    },
+    {
+    "cname": "商品创建终点时间",
+    "label": "end_time",
+    "type": "0",
+    "value": "",
+    "description": "如为空，默认时间为当日（日期格式如2022-12-31或2022-12-11 00:00）"
+    },
+    {
+    "cname": "出价金额",
+    "label": "money",
+    "type": "0",
+    "value": "",
+    "rule": "True",
+    "description": "必填项，输入需要修改的金额，支持小数点后两位"
+    },
+    {
+    "cname": "跑测",
+    "label": "test_flag",
+    "type": "0",
+    "value": "",
+    "description": "有值表示跑测，不填表示不跑测.跑测为不做最终实际加库存操作"
+    }
+]
